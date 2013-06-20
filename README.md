@@ -25,3 +25,13 @@ Changelog:
 - 05/06/2013 Added support for sftp + /var/www
 - 08/06/2013 Moved to /srv/www and subdomain support
 - 09/06/2013 Added support with Wordpress dedicated template, changed php-fpm permission to www-data
+
+#by panser:
+
+##Install
+<pre>
+<code>
+# mkdir -pv /opt/vcs/github; cd /opt/vcs/github
+# git clone https://github.com/panser/nginx_vhosts.git
+</code>
+</pre>
