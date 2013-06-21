@@ -78,7 +78,12 @@ useradd $USERNAME
 # Now we need to copy the virtual host template
 CONFIG=$NGINX_CONFIG/$SUB.$DOMAIN.conf
 cp $CURRENT_DIR/$TEMPLATE $CONFIG
+
+if [ $SUB == "www" ]; then
+$SED -i "s/@@HOSTNAME@@/$DOMAIN/g" $CONFIG
+else
 $SED -i "s/@@HOSTNAME@@/$SUB.$DOMAIN/g" $CONFIG
+fi
 $SED -i "s#@@PATH@@#\/srv\/www\/"$DOMAIN\/$SUB\/$PUBLIC_HTML_DIR"#g" $CONFIG
 $SED -i "s/@@LOG_PATH@@/\/srv\/www\/$DOMAIN\/$SUB\/_logs/g" $CONFIG
 $SED -i "s#@@SOCKET@@#/var/run/"$SUB"."$DOMAIN"_fpm.sock#g" $CONFIG

@@ -35,3 +35,22 @@ Changelog:
 # git clone https://github.com/panser/nginx_vhosts.git
 </code>
 </pre>
+
+##Uses
+<pre>
+<code>
+# /opt/vcs/github/nginx_vhosts/setup.sh wp.thd.cc
+Are you configuring the www domain (y/n)?
+y
+Are you installing wordpress? (y/n)
+n
+Please specify the sftp username for this site:
+thd.cc_wp
+How many FPM servers would you like by default: (suggested 2)
+20
+Min number of FPM servers would you like: (suggested 1)
+3
+Max number of FPM servers would you like: (suggested 5)
+50
+</code>
+</pre>
