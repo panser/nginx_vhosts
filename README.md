@@ -27,6 +27,8 @@ Changelog:
 - 09/06/2013 Added support with Wordpress dedicated template, changed php-fpm permission to www-data
 
 #by panser:
+##Restrictions
+only for **Debian**
 
 ##Install
 <pre>
